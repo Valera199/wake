@@ -21,7 +21,6 @@ public class Boat {
 
 
     public void move(int t) {
-        posX = t * power / water;
-
+        posX = t * power / water + posX;
     }
 }

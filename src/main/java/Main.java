@@ -17,8 +17,8 @@ public class Main {
 
     public static void main(String[] args) {
         int lenghtCable = 4;
-        double price = 0;
-        double amount = 0;
+       // double price = 0;
+       // double amount = 0;
 
 
 
@@ -46,14 +46,15 @@ public class Main {
         while (true) {
             Scanner in = new Scanner(System.in);
             System.out.println("Время нажатия на дорсиль ");
-            price = in.nextInt();
-            System.out.println("Введдите колчество: ");
-            int counter = in.nextInt();
+            int change = in.nextInt();
+            boat1.move(change);
 
             System.out.println("Позиция катера: " + boat1.posX + "\nПозиция вейка: " + wake.posX);
             if (wake.posX == (boat1.posX - lenghtCable)) {
                 System.out.println("Ты справился!");
+                break;
             }
+            System.out.println("###############################################");
         }
     }
 }
