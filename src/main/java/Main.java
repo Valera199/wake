@@ -37,22 +37,23 @@ public class Main {
 
         Boat boat1 = new Boat(230, 597, 249, 0, "MC", "X");
 
-    //    System.out.println(boat1);
-    //    System.out.println(boat1.power);
+        //    System.out.println(boat1);
+        //    System.out.println(boat1.power);
 
         Wakeboard wake = new Wakeboard(3, 37, 138, 0, "LF", "D");
 
-     //   System.out.println(boat1.posX + wake.posX - 4);
+        //   System.out.println(boat1.posX + wake.posX - 4);
         while (true) {
             Scanner in = new Scanner(System.in);
             System.out.println("Время нажатия на дорсиль ");
             price = in.nextInt();
             System.out.println("Введдите колчество: ");
             int counter = in.nextInt();
-        }
-        System.out.println("Позиция катера: " + boat1.posX + "\nПозиция вейка: " + wake.posX);
-        if (wake.posX == (boat1.posX - lenghtCable)) {
-            System.out.println("Ты справился!");
+
+            System.out.println("Позиция катера: " + boat1.posX + "\nПозиция вейка: " + wake.posX);
+            if (wake.posX == (boat1.posX - lenghtCable)) {
+                System.out.println("Ты справился!");
+            }
         }
     }
 }
